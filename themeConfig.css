@@ -1,0 +1,102 @@
+:root {
+  /* commons */
+  --common-black: #000;
+  --common-white: #fff;
+
+  /* light theme */
+  --contrast-text: '#fff',
+  --primary: #19376d;
+  --secondary: #4798d1;
+  --info: #0277bd;
+  --success: #388e3c;
+  --warning: #f57c00;
+  --error: #d32f2f;
+  --text-primary: rgba(0,0,0,0.95);
+  --text-secondary: rgba(0,0,0,0.7);
+  --text-disabled: rgba(0,0,0,0.5);
+  --divider: rgba(0, 0, 0, 0.15);
+  --background-default: #f8fafc;
+  --background-paper: #fff;
+
+  /* dark theme */
+  --contrast-text-dark: '#fff',
+  --primary-dark: #19376d;
+  --secondary-dark: #4798d1;
+  --info-dark: #0277bd;
+  --success-dark: #388e3c;
+  --warning-dark: #f57c00;
+  --error-dark: #d32f2f;
+  --text-primary-dark: rgba(255, 255, 255, 0.95);
+  --text-secondary-dark: rgba(255, 255, 255, 0.7);
+  --text-disabled-dark: rgba(255, 255, 255,, 0.5);
+  --divider-dark: rgba(255, 255, 255, 0.15);
+  --background-default-dark: #181a20;
+  --background-paper-dark: #333333;
+
+  /* typography */
+
+  /* h1 */
+  --h1-font-weight: 500;
+  --h1-font-size: 3.5rem;
+  --h1-line-height: 1.167;
+
+  /* h2 */
+  --h2-font-weight: 500;
+  --h2-font-size: 3rem;
+  --h2-line-height: 1.2;
+
+  /* h3 */
+  --h3-font-weight: 500;
+  --h3-font-size: 2.6rem;
+  --h3-line-height: 1.167;
+
+  /* h4 */
+  --h4-font-weight: 500;
+  --h4-font-size: 2.1rem;
+  --h4-line-height: 1.235;
+
+  /* h5 */
+  --h5-font-weight: 500;
+  --h5-font-size: 1.6rem;
+  --h5-line-height: 1.334;
+
+  /* h6 */
+  --h6-font-weight: 500;
+  --h6-font-size: 1.3rem;
+  --h6-line-height: 1.6;
+
+  /* subtitle 1 */
+  --subtitle1-font-weight: 400;
+  --subtitle1-font-size: 1.15rem;
+  --subtitle1-line-height: 1.75;
+
+  /* subtitle 2 */
+  --subtitle2-font-weight: 500;
+  --subtitle2-font-size: 0.95rem;
+  --subtitle2-line-height: 1.57;
+
+  /* body 1 */
+  --body1-font-weight: 100;
+  --body1-font-size: 1.05rem;
+  --body1-line-height: 1.5;
+
+  /* body 2 */
+  --body2-font-weight: 100;
+  --body2-font-size: 0.9rem;
+  --body2-line-height: 1.43;
+
+    /* button */
+  --button-font-weight: 800;
+  --button-font-size: 0.9rem;
+  --button-line-height: 1.75;
+
+  /* caption */
+  --caption-font-weight: 400;
+  --caption-font-size: 0.75rem;
+  --caption-line-height: 1.66;
+
+  /* overline */
+  --overline-font-weight: 400;
+  --overline-font-size: 0.75rem;
+  --overline-line-height: 2.66;
+}

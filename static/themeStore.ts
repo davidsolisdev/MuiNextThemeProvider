@@ -8,7 +8,7 @@ interface ThemeStore {
 
 type themeOptions = "light" | "dark";
 
-function reconizeMode(theme: string | null): themeOptions {
+function reconizeTheme(theme?: string | null): themeOptions {
   if (theme && theme.length > 3) return theme === "dark" ? "dark" : "light";
 
   // si el usuario aun no ha definido un tema, se le asigna el tema del sistema operativo
@@ -25,8 +25,15 @@ function toggleTheme(theme?: themeOptions): themeOptions {
     return theme;
   }
 
+  // si el usuario no envia un tema y no existe tema guardado, se le guarda el tema del sistema operativo
+  if (!localStorage.getItem("theme")) {
+    reconizeTheme() === "dark"
+      ? localStorage.setItem("theme", "dark")
+      : localStorage.setItem("theme", "light");
+  }
+
   // si el usuario no envia un tema y su tema actual es dark, se cambia a light
-  if (reconizeMode(localStorage.getItem("theme")) === "dark") {
+  if (reconizeTheme(localStorage.getItem("theme")) === "dark") {
     localStorage.setItem("theme", "light");
     document.querySelector("body")!.classList.remove("dark");
     return "light";
@@ -39,8 +46,8 @@ function toggleTheme(theme?: themeOptions): themeOptions {
 }
 
 export const useThemeStore = create<ThemeStore>((set) => ({
-  theme: "light",
+  theme: "dark",
   toggleTheme: () => set({ theme: toggleTheme() }),
   reconizeTheme: () =>
-    set({ theme: toggleTheme(reconizeMode(localStorage.getItem("theme"))) }),
+    set({ theme: toggleTheme(reconizeTheme(localStorage.getItem("theme"))) }),
 }));
