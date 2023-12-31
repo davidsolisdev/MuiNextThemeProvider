@@ -1,4 +1,11 @@
 :root {
+  /* fonts */
+  --titles: var(--arvo-font);
+  --subtitles: var(--arvo-font);
+  --paragraph: var(--roboto-font);
+  --button: var(--spaceMono-font);
+  --caption: var(--roboto-font);
+
   /* commons */
   --common-black: #000;
   --common-white: #fff;
@@ -99,4 +106,102 @@
   --overline-font-weight: 400;
   --overline-font-size: 0.75rem;
   --overline-line-height: 2.66;
+}
+
+p{
+  font-family: var(--paragraph);
+  font-weight: var(--body1-font-weight);
+  font-size: var(--body1-font-size);
+  line-height: var(--body1-line-height);
+}
+
+h1{
+  font-family: var(--titles);
+  font-weight: var(--h1-font-weight);
+  font-size: var(--h1-font-size);
+  line-height: var(--h1-line-height);
+}
+
+h2{
+  font-family: var(--titles);
+  font-weight: var(--h2-font-weight);
+  font-size: var(--h2-font-size);
+  line-height: var(--h2-line-height);
+}
+
+h3{
+  font-family: var(--titles);
+  font-weight: var(--h3-font-weight);
+  font-size: var(--h3-font-size);
+  line-height: var(--h3-line-height);
+}
+
+h4{
+  font-family: var(--titles);
+  font-weight: var(--h4-font-weight);
+  font-size: var(--h4-font-size);
+  line-height: var(--h4-line-height);
+}
+
+h5{
+  font-family: var(--titles);
+  font-weight: var(--h5-font-weight);
+  font-size: var(--h5-font-size);
+  line-height: var(--h5-line-height);
+}
+
+h6{
+  font-family: var(--titles);
+  font-weight: var(--h6-font-weight);
+  font-size: var(--h6-font-size);
+  line-height: var(--h6-line-height);
+}
+
+.subtitle1{
+  font-family: var(--subtitles);
+  font-weight: var(--subtitle1-font-weight);
+  font-size: var(--subtitle1-font-size);
+  line-height: var(--subtitle1-line-height);
+}
+
+.subtitle2{
+  font-family: var(--subtitles);
+  font-weight: var(--subtitle2-font-weight);
+  font-size: var(--subtitle2-font-size);
+  line-height: var(--subtitle2-line-height);
+}
+
+.body1{
+  font-family: var(--paragraph);
+  font-weight: var(--body1-font-weight);
+  font-size: var(--body1-font-size);
+  line-height: var(--body1-line-height);
+}
+
+.body2{
+  font-family: var(--paragraph);
+  font-weight: var(--body2-font-weight);
+  font-size: var(--body2-font-size);
+  line-height: var(--body2-line-height);
+}
+
+.button{
+  font-family: var(--button);
+  font-weight: var(--button-font-weight);
+  font-size: var(--button-font-size);
+  line-height: var(--button-line-height);
+}
+
+.caption{
+  font-family: var(--caption);
+  font-weight: var(--caption-font-weight);
+  font-size: var(--caption-font-size);
+  line-height: var(--caption-line-height);
+}
+
+.overline{
+  font-family: var(--paragraph);
+  font-weight: var(--overline-font-weight);
+  font-size: var(--overline-font-size);
+  line-height: var(--overline-line-height);
 }

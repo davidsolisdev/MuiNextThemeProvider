@@ -1,18 +1,24 @@
 "use client";
-import { themeFonts } from "../fontsConfig";
 import components from "../componentsConfig";
 import { createTheme } from "@mui/material/styles";
 
 // Types
 import type { Theme, ThemeOptions } from "@mui/material/styles/createTheme";
 import type { TypographyOptions } from "@mui/material/styles/createTypography";
-
-export type FontsTheme = {
+type FontsTheme = {
   titulos: string;
   subTitulos: string;
   parrafos: string;
   botones: string;
   caption: string;
+};
+
+const themeFonts: FontsTheme = {
+  titulos: "var(--titles)",
+  subTitulos: "var(--subtitles)",
+  parrafos: "var(--paragraph)",
+  botones: "var(--button)",
+  caption: "var(--caption)",
 };
 
 const typography: TypographyOptions = {
