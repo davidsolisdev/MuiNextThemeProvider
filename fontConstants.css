@@ -1,3 +1,6 @@
+/* styles for globals.css */
+
+@import url("./colorConstants.css");
 :root {
   /* fonts */
   --titles: var(--arvo-font);
@@ -5,42 +8,6 @@
   --paragraph: var(--roboto-font);
   --button: var(--spaceMono-font);
   --caption: var(--roboto-font);
-
-  /* commons */
-  --common-black: #000;
-  --common-white: #fff;
-
-  /* light theme */
-  --contrast-text: '#fff',
-  --primary: #19376d;
-  --secondary: #4798d1;
-  --info: #0277bd;
-  --success: #388e3c;
-  --warning: #f57c00;
-  --error: #d32f2f;
-  --text-primary: rgba(0,0,0,0.95);
-  --text-secondary: rgba(0,0,0,0.7);
-  --text-disabled: rgba(0,0,0,0.5);
-  --divider: rgba(0, 0, 0, 0.15);
-  --background-default: #f8fafc;
-  --background-paper: #fff;
-
-  /* dark theme */
-  --contrast-text-dark: '#fff',
-  --primary-dark: #19376d;
-  --secondary-dark: #4798d1;
-  --info-dark: #0277bd;
-  --success-dark: #388e3c;
-  --warning-dark: #f57c00;
-  --error-dark: #d32f2f;
-  --text-primary-dark: rgba(255, 255, 255, 0.95);
-  --text-secondary-dark: rgba(255, 255, 255, 0.7);
-  --text-disabled-dark: rgba(255, 255, 255,, 0.5);
-  --divider-dark: rgba(255, 255, 255, 0.15);
-  --background-default-dark: #181a20;
-  --background-paper-dark: #333333;
-
-  /* typography */
 
   /* h1 */
   --h1-font-weight: 500;
@@ -92,7 +59,7 @@
   --body2-font-size: 0.9rem;
   --body2-line-height: 1.43;
 
-    /* button */
+  /* button */
   --button-font-weight: 800;
   --button-font-size: 0.9rem;
   --button-line-height: 1.75;
@@ -108,98 +75,105 @@
   --overline-line-height: 2.66;
 }
 
-p{
+p {
   font-family: var(--paragraph);
   font-weight: var(--body1-font-weight);
   font-size: var(--body1-font-size);
   line-height: var(--body1-line-height);
 }
 
-h1{
+h1 {
   font-family: var(--titles);
   font-weight: var(--h1-font-weight);
   font-size: var(--h1-font-size);
   line-height: var(--h1-line-height);
 }
 
-h2{
+h2 {
   font-family: var(--titles);
   font-weight: var(--h2-font-weight);
   font-size: var(--h2-font-size);
   line-height: var(--h2-line-height);
 }
 
-h3{
+h3 {
   font-family: var(--titles);
   font-weight: var(--h3-font-weight);
   font-size: var(--h3-font-size);
   line-height: var(--h3-line-height);
 }
 
-h4{
+h4 {
   font-family: var(--titles);
   font-weight: var(--h4-font-weight);
   font-size: var(--h4-font-size);
   line-height: var(--h4-line-height);
 }
 
-h5{
+h5 {
   font-family: var(--titles);
   font-weight: var(--h5-font-weight);
   font-size: var(--h5-font-size);
   line-height: var(--h5-line-height);
 }
 
-h6{
+h6 {
   font-family: var(--titles);
   font-weight: var(--h6-font-weight);
   font-size: var(--h6-font-size);
   line-height: var(--h6-line-height);
 }
 
-.subtitle1{
-  font-family: var(--subtitles);
-  font-weight: var(--subtitle1-font-weight);
-  font-size: var(--subtitle1-font-size);
-  line-height: var(--subtitle1-line-height);
-}
-
-.subtitle2{
-  font-family: var(--subtitles);
-  font-weight: var(--subtitle2-font-weight);
-  font-size: var(--subtitle2-font-size);
-  line-height: var(--subtitle2-line-height);
-}
-
-.body1{
-  font-family: var(--paragraph);
-  font-weight: var(--body1-font-weight);
-  font-size: var(--body1-font-size);
-  line-height: var(--body1-line-height);
-}
-
-.body2{
-  font-family: var(--paragraph);
-  font-weight: var(--body2-font-weight);
-  font-size: var(--body2-font-size);
-  line-height: var(--body2-line-height);
-}
-
-.button{
+button {
   font-family: var(--button);
   font-weight: var(--button-font-weight);
   font-size: var(--button-font-size);
   line-height: var(--button-line-height);
 }
 
-.caption{
+.subtitle1 {
+  font-family: var(--subtitles);
+  font-weight: var(--subtitle1-font-weight);
+  font-size: var(--subtitle1-font-size);
+  line-height: var(--subtitle1-line-height);
+}
+
+.subtitle2 {
+  font-family: var(--subtitles);
+  font-weight: var(--subtitle2-font-weight);
+  font-size: var(--subtitle2-font-size);
+  line-height: var(--subtitle2-line-height);
+}
+
+.body1 {
+  font-family: var(--paragraph);
+  font-weight: var(--body1-font-weight);
+  font-size: var(--body1-font-size);
+  line-height: var(--body1-line-height);
+}
+
+.body2 {
+  font-family: var(--paragraph);
+  font-weight: var(--body2-font-weight);
+  font-size: var(--body2-font-size);
+  line-height: var(--body2-line-height);
+}
+
+.button {
+  font-family: var(--button);
+  font-weight: var(--button-font-weight);
+  font-size: var(--button-font-size);
+  line-height: var(--button-line-height);
+}
+
+.caption {
   font-family: var(--caption);
   font-weight: var(--caption-font-weight);
   font-size: var(--caption-font-size);
   line-height: var(--caption-line-height);
 }
 
-.overline{
+.overline {
   font-family: var(--paragraph);
   font-weight: var(--overline-font-weight);
   font-size: var(--overline-font-size);

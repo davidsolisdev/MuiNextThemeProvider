@@ -1,7 +1,8 @@
 import { Roboto, Arvo, Space_Mono } from "next/font/google";
+import { ThemeFonts } from "./static/theme";
 
 const robotoFont = Roboto({
-  weight: ["100", "300", "400", "700", "900"],
+  weight: ["100", "300", "400", "500", "700", "900"],
   subsets: ["latin"],
   variable: "--roboto-font",
 });
@@ -16,6 +17,15 @@ const spaceMonoFont = Space_Mono({
   variable: "--spaceMono-font",
 });
 
-// fonts for app/Layout.tsx
+// fonts for app/layout.tsx
 const fontConstants = `${robotoFont.variable} ${arvoFont.variable} ${spaceMonoFont.variable}`;
 export default fontConstants;
+
+// fonts for MUI Theme
+export const themeFonts: ThemeFonts = {
+  titles: "var(--arvo-font)",
+  subTitles: "var(--arvo-font)",
+  paragraph: "var(--roboto-font)",
+  button: "var(--spaceMono-font)",
+  caption: "var(--roboto-font)",
+};
