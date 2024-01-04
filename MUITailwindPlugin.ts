@@ -11,8 +11,8 @@ const colors = {
   "text-primary": "var(--text-primary)",
   "text-secondary": "var(--text-secondary)",
   "text-disabled": "var(--text-disabled)",
-  "background-default": "var(--background-default)",
-  "background-paper": "var(--background-paper)",
+  "background-default": "var(--bg-default)",
+  "background-paper": "var(--bg-paper)",
   "primary-dark": "var(--primary-dark)",
   "secondary-dark": "var(--secondary-dark)",
   "info-dark": "var(--info-dark)",
@@ -23,8 +23,8 @@ const colors = {
   "text-primary-dark": "var(--text-primary-dark)",
   "text-secondary-dark": "var(--text-secondary-dark)",
   "text-disabled-dark": "var(--text-disabled-dark)",
-  "background-default-dark": "var(--background-default-dark)",
-  "background-paper-dark": "var(--background-paper-dark)",
+  "background-default-dark": "var(--bg-default-dark)",
+  "background-paper-dark": "var(--bg-paper-dark)",
 };
 
 plugin(({ addUtilities }) =>
