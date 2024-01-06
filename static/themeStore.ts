@@ -20,8 +20,8 @@ function reconizeTheme(theme?: string | null): themeOptions {
 function toggleTheme(theme?: themeOptions): themeOptions {
   // si el usuario envia un tema, se asigna dicho tema
   if (theme) {
-    if (theme === "dark") document.querySelector("body")!.classList.add("dark");
-    else document.querySelector("body")!.classList.remove("dark");
+    if (theme === "dark") document.querySelector("html")!.classList.add("dark");
+    else document.querySelector("html")!.classList.remove("dark");
     return theme;
   }
 
@@ -35,13 +35,13 @@ function toggleTheme(theme?: themeOptions): themeOptions {
   // si el usuario no envia un tema y su tema actual es dark, se cambia a light
   if (reconizeTheme(localStorage.getItem("theme")) === "dark") {
     localStorage.setItem("theme", "light");
-    document.querySelector("body")!.classList.remove("dark");
+    document.querySelector("html")!.classList.remove("dark");
     return "light";
   }
 
   // si el usuario no envia un tema y su tema actual es light, se cambia a dark
   localStorage.setItem("theme", "dark");
-  document.querySelector("body")!.classList.add("dark");
+  document.querySelector("html")!.classList.add("dark");
   return "dark";
 }
 
