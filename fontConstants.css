@@ -8,6 +8,7 @@
   --paragraph: var(--roboto-font);
   --button: var(--spaceMono-font);
   --caption: var(--roboto-font);
+  --overline: var(--roboto-font);
 
   /* h1 */
   --h1-font-weight: 500;
@@ -75,11 +76,8 @@
   --overline-line-height: 2.66;
 }
 
-p {
+* {
   font-family: var(--paragraph);
-  font-weight: var(--body1-font-weight);
-  font-size: var(--body1-font-size);
-  line-height: var(--body1-line-height);
 }
 
 h1 {
