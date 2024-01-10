@@ -123,10 +123,10 @@ h6 {
 }
 
 button {
-  font-family: var(--button);
-  font-weight: var(--button-font-weight);
-  font-size: var(--button-font-size);
-  line-height: var(--button-line-height);
+  font-family: var(--button) !important;
+  font-weight: var(--button-font-weight) !important;
+  font-size: var(--button-font-size) !important;
+  line-height: var(--button-line-height) !important;
 }
 
 .subtitle1 {
